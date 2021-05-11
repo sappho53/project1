@@ -30,7 +30,7 @@ section {
 .right h1 {
   text-align: left;
   font-family: 微軟正黑體;
-  color: red;
+  color: rgb(255, 0, 0);
   font-size: 50px;
   font-weight: bolder;
 }
@@ -266,15 +266,15 @@ section div span {
 
 .active,
 .accordion:hover {
-  background-color: lightyellow;
+  background-color: rgb(5, 75, 36);
 }
 
 .panel {
   padding: 20px 20px;
   width: 80%;
   display: none;
-  background-color: ivory;
+  background-color: lightgoldenrodyellow;
   overflow: hidden;
-  color: darkorange;
+  color: green;
   font-size: 20px;
 }
