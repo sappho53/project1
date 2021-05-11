@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sappho</title>
+  <style type="text/css">
+    @import url("self.css");
+  </style>
+</head>
+
+<body>
+  <div>
+    <video autoplay muted loop class="back-video">
+      <source src="photo/video2.mp4" type="video/mp4">
+    </video>
+    <section>
+      <div class="row">
+        <div class="left">
+          <div style="width: 50%; align-items: center;">
+            <img src="photo/f68.jpg" class="personal-photo">
+          </div>
+          <p>
+            <h2 class="text">專業技能</h2>
+          </p>
+          <p>
+            <ul class="listSkill">
+              <li>
+                <div class="circle">
+                  <svg>
+                    <circle cx="60" cy="60" r="60"></circle>
+                    <circle cx="60" cy="60" r="60"></circle>
+                  </svg>
+                  <div class="word">
+                    <h3>會計</h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="circle">
+                  <svg>
+                    <circle cx="60" cy="60" r="60"></circle>
+                    <circle cx="60" cy="60" r="60"></circle>
+                  </svg>
+                  <div class="word">
+                    <h3>windoows95</h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="circle">
+                  <svg>
+                    <circle cx="60" cy="60" r="60"></circle>
+                    <circle cx="60" cy="60" r="60"></circle>
+                  </svg>
+                  <div class="word">
+                    <h3> office7.0</h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </p>
+          <div>
+            <p>
+              <h2 class="text">Programmimg skill ：程式技能)
+              </h2>
+            </p>
+            <ul>
+              <li>
+                <h4 style="color: rgb(12, 233, 12);" class="text2">Java</h4>
+                <div class="container">
+                  <div id="sk1" style="width: 85%;">85%</div>
+                </div>
+              </li>
+              <li>
+                <h4 style="color: rgb(30, 154, 255);" class="text2">Net</h4>
+                <div class="container">
+                  <div id="sk2" style="width: 72%;">72%</div>
+                </div>
+              </li>
+              <li>
+                <h4 style="color: rgb(255, 20, 177);" class="text2">HTML/CSS/JavaScript(學習中)</h4>
+                <div class="container">
+                  <div id="sk3" style="width: 30%;">30%</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right">
+          <div>
+            <h1>劉姿妤</h1><br>
+            <h2 class="text1">人不應該被過去束縛，<br>只有你能描繪自己的未來。<br></h2>
+          </div>
+          <p>
+            <h2 class="text">Interest：興趣</h2>
+          </p>
+          <p>
+            <span>看小說 、</span><span>聽音樂 、</span><span>旅遊</span></p>
+          <div>
+            <p>
+              <h2 class="text">Experience：工作經歷</h2>
+            </p>
+            <button class="accordion">會 計</button>
+            <div class="panel">
+              五十歲退休前，此工作做了將近三十多年，是個每月枯燥又固定的工作，卻是是最容易找到的職業，讓我可以半工半讀完成專科的課程，後因有網路的便利，可以我在退休前十年，又幸運搭上早期台商在大陸開公司，皆可在線上記帳及連繫，方便我到處旅遊。
+            </div>
+            <p></p>
+            <button class="accordion">美容工作室</button>
+            <div class="panel">
+              因為第一家日本分公司結束台灣業務，所以考了丙級證照，開了個人工作室一年。
+              <img src="photo/License4.jpg" style="width: 50px; height: 100px;">
+            </div>
+            <p></p>
+            <button class="accordion">電腦教師</button>
+            <div class="panel">
+              在巨匠電腦教室，教早期的Windows95 - 98、Office 7.0-97，也在教學中用了Excel寫了一套簡易的會計軟體，讓我在後期只要有電腦及網路工作。
+              <div style="width: 80%; height: auto; ">
+                <div style="padding: 10px;">
+                  <span> <img src="photo/License1.jpg" style="width: 150px; height: 90px;"></span>
+                  <span><img src="photo/License2.jpg" style="width: 150px; height: 90px;"></span>
+                  <span> <img src="photo/License3.jpg" style="width: 150px; height: 90px;"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="padding-top: 100px;">
+            <a href="https://www.facebook.com/sappho.liu" target="_blank">
+              <img src="photo/fb.jpg" style="margin-left: 200px" height="50px" width="50px"></a>
+            <a href="mailto:sappho5311@gmail.com"><img src="photo/figure-93.gif" style="margin-right: 200px"
+                height="50px" width="50px"></a>
+          </div>
+          <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+          </script>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
